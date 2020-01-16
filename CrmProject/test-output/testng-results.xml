@@ -1,25 +1,137 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24161" started-at="2020-01-15T08:39:13Z" finished-at="2020-01-15T08:39:37Z">
+  <suite name="CrmTestSuite" duration-ms="176631" started-at="2020-01-16T14:07:57Z" finished-at="2020-01-16T14:10:54Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24161" started-at="2020-01-15T08:39:13Z" finished-at="2020-01-15T08:39:37Z">
-      <class name="com.crm.TestCases.CrmCompanyTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.crm.TestCases.CrmCompanyTest@224edc67]" name="beforeMethod" is-config="true" duration-ms="16955" started-at="2020-01-15T14:09:13Z" finished-at="2020-01-15T14:09:30Z">
+    <test name="CrmTestCases" duration-ms="176631" started-at="2020-01-16T14:07:57Z" finished-at="2020-01-16T14:10:54Z">
+      <class name="com.crm.TestCases.CrmLoginTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.crm.TestCases.CrmLoginTest@4501b7af]" name="beforeMethod" is-config="true" duration-ms="13617" started-at="2020-01-16T19:38:26Z" finished-at="2020-01-16T19:38:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verifyaddnewcompany()[pri:0, instance:com.crm.TestCases.CrmCompanyTest@224edc67]" name="verifyaddnewcompany" duration-ms="5465" started-at="2020-01-15T14:09:30Z" finished-at="2020-01-15T14:09:36Z">
+        <test-method status="PASS" signature="verifylogin()[pri:1, instance:com.crm.TestCases.CrmLoginTest@4501b7af]" name="verifylogin" duration-ms="1500" started-at="2020-01-16T19:38:40Z" finished-at="2020-01-16T19:38:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifylogin -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.crm.TestCases.CrmLoginTest@4501b7af]" name="afterMethod" is-config="true" duration-ms="1347" started-at="2020-01-16T19:38:41Z" finished-at="2020-01-16T19:38:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.crm.TestCases.CrmLoginTest@4501b7af]" name="beforeMethod" is-config="true" duration-ms="12714" started-at="2020-01-16T19:39:01Z" finished-at="2020-01-16T19:39:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyusername()[pri:2, instance:com.crm.TestCases.CrmLoginTest@4501b7af]" name="verifyusername" duration-ms="104" started-at="2020-01-16T19:39:14Z" finished-at="2020-01-16T19:39:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyusername -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.crm.TestCases.CrmLoginTest@4501b7af]" name="afterMethod" is-config="true" duration-ms="1167" started-at="2020-01-16T19:39:14Z" finished-at="2020-01-16T19:39:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.crm.TestCases.CrmLoginTest@4501b7af]" name="beforeMethod" is-config="true" duration-ms="12837" started-at="2020-01-16T19:39:32Z" finished-at="2020-01-16T19:39:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifypassword()[pri:3, instance:com.crm.TestCases.CrmLoginTest@4501b7af]" name="verifypassword" duration-ms="47" started-at="2020-01-16T19:39:44Z" finished-at="2020-01-16T19:39:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifypassword -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.crm.TestCases.CrmLoginTest@4501b7af]" name="afterMethod" is-config="true" duration-ms="1169" started-at="2020-01-16T19:39:44Z" finished-at="2020-01-16T19:39:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.crm.TestCases.CrmLoginTest@4501b7af]" name="beforeMethod" is-config="true" duration-ms="13880" started-at="2020-01-16T19:40:04Z" finished-at="2020-01-16T19:40:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyforgotpassword()[pri:4, instance:com.crm.TestCases.CrmLoginTest@4501b7af]" name="verifyforgotpassword" duration-ms="33" started-at="2020-01-16T19:40:18Z" finished-at="2020-01-16T19:40:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyforgotpassword -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.crm.TestCases.CrmLoginTest@4501b7af]" name="afterMethod" is-config="true" duration-ms="1185" started-at="2020-01-16T19:40:18Z" finished-at="2020-01-16T19:40:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.crm.TestCases.CrmLoginTest -->
+      <class name="com.crm.TestCases.CrmDashboardTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.crm.TestCases.CrmDashboardTest@523884b2]" name="beforeMethod" is-config="true" duration-ms="14981" started-at="2020-01-16T19:38:43Z" finished-at="2020-01-16T19:38:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifycontactpagenavigation()[pri:1, instance:com.crm.TestCases.CrmDashboardTest@523884b2]" name="verifycontactpagenavigation" duration-ms="1949" started-at="2020-01-16T19:38:58Z" finished-at="2020-01-16T19:39:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifycontactpagenavigation -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.crm.TestCases.CrmDashboardTest@523884b2]" name="afterMethod" is-config="true" duration-ms="1176" started-at="2020-01-16T19:39:00Z" finished-at="2020-01-16T19:39:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.crm.TestCases.CrmDashboardTest@523884b2]" name="beforeMethod" is-config="true" duration-ms="13330" started-at="2020-01-16T19:39:15Z" finished-at="2020-01-16T19:39:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifycompanypagenavigation()[pri:2, instance:com.crm.TestCases.CrmDashboardTest@523884b2]" name="verifycompanypagenavigation" duration-ms="2257" started-at="2020-01-16T19:39:28Z" finished-at="2020-01-16T19:39:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifycompanypagenavigation -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.crm.TestCases.CrmDashboardTest@523884b2]" name="afterMethod" is-config="true" duration-ms="1180" started-at="2020-01-16T19:39:30Z" finished-at="2020-01-16T19:39:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.crm.TestCases.CrmDashboardTest@523884b2]" name="beforeMethod" is-config="true" duration-ms="14983" started-at="2020-01-16T19:39:46Z" finished-at="2020-01-16T19:40:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifydealspagenavigation()[pri:3, instance:com.crm.TestCases.CrmDashboardTest@523884b2]" name="verifydealspagenavigation" duration-ms="1789" started-at="2020-01-16T19:40:01Z" finished-at="2020-01-16T19:40:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifydealspagenavigation -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.crm.TestCases.CrmDashboardTest@523884b2]" name="afterMethod" is-config="true" duration-ms="1403" started-at="2020-01-16T19:40:02Z" finished-at="2020-01-16T19:40:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.crm.TestCases.CrmDashboardTest@523884b2]" name="beforeMethod" is-config="true" duration-ms="14214" started-at="2020-01-16T19:40:19Z" finished-at="2020-01-16T19:40:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifytaskspagenavigation()[pri:4, instance:com.crm.TestCases.CrmDashboardTest@523884b2]" name="verifytaskspagenavigation" duration-ms="1789" started-at="2020-01-16T19:40:33Z" finished-at="2020-01-16T19:40:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifytaskspagenavigation -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.crm.TestCases.CrmDashboardTest@523884b2]" name="afterMethod" is-config="true" duration-ms="1473" started-at="2020-01-16T19:40:35Z" finished-at="2020-01-16T19:40:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.crm.TestCases.CrmDashboardTest@523884b2]" name="beforeMethod" is-config="true" duration-ms="14295" started-at="2020-01-16T19:40:36Z" finished-at="2020-01-16T19:40:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifycasespagenavigation()[pri:5, instance:com.crm.TestCases.CrmDashboardTest@523884b2]" name="verifycasespagenavigation" duration-ms="1787" started-at="2020-01-16T19:40:51Z" finished-at="2020-01-16T19:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifycasespagenavigation -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.crm.TestCases.CrmDashboardTest@523884b2]" name="afterMethod" is-config="true" duration-ms="1286" started-at="2020-01-16T19:40:53Z" finished-at="2020-01-16T19:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.crm.TestCases.CrmDashboardTest -->
+      <class name="com.crm.TestCases.CrmCompanyTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.crm.TestCases.CrmCompanyTest@5b275dab]" name="beforeMethod" is-config="true" duration-ms="22884" started-at="2020-01-16T19:37:57Z" finished-at="2020-01-16T19:38:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyaddnewcompany()[pri:0, instance:com.crm.TestCases.CrmCompanyTest@5b275dab]" name="verifyaddnewcompany" duration-ms="4928" started-at="2020-01-16T19:38:20Z" finished-at="2020-01-16T19:38:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyaddnewcompany -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.crm.TestCases.CrmCompanyTest@224edc67]" name="afterMethod" is-config="true" duration-ms="1717" started-at="2020-01-15T14:09:36Z" finished-at="2020-01-15T14:09:37Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.crm.TestCases.CrmCompanyTest@5b275dab]" name="afterMethod" is-config="true" duration-ms="1245" started-at="2020-01-16T19:38:25Z" finished-at="2020-01-16T19:38:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- com.crm.TestCases.CrmCompanyTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- CrmTestCases -->
+  </suite> <!-- CrmTestSuite -->
 </testng-results>

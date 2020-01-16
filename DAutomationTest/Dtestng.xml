@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DSuite">
+ 
+ 	
+<listeners>
+		
+<listener class-name="com.qa.digi.DigitalTestCasesResult.ExtentReporterNG" />
+	
+</listeners>
+ 
+ 
+ 
+  <test name="DTest">
+    <classes>
+      <class name="com.qa.digi.TestCases.DoctorDashboardTest"/>
+      <class name="com.qa.digi.TestCases.DoctorLoginTest"/>
+      <class name="com.qa.digi.TestCases.DoctorAddPrescriptionTest"/>
+    </classes>
+  </test> <!-- DTest -->
+</suite> <!-- DSuite -->
