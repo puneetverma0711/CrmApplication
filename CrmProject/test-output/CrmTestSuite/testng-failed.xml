@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CrmTestSuite]">
+  <listeners>
+    <listener class-name="com.crm.Listeners.TestJiraListener"/>
+  </listeners>
+  <test name="CrmTestCases(failed)">
+    <classes>
+      <class name="com.crm.TestCases.CrmDashboardTest">
+        <methods>
+          <include name="verifydealspagenavigation"/>
+          <include name="verifycasespagenavigation"/>
+          <include name="beforeMethod"/>
+          <include name="verifytaskspagenavigation"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.crm.TestCases.CrmDashboardTest -->
+    </classes>
+  </test> <!-- CrmTestCases(failed) -->
+</suite> <!-- Failed suite [CrmTestSuite] -->
