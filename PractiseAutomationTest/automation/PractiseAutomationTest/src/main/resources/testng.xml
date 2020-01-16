@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Digital Optomterics Test Suite">
+
+	
+<listeners>
+		
+<listener class-name="com.qa.digi.DigitalTestCasesResult.ExtentReporterNG" />
+	
+</listeners>
+
+
+
+	<test name="Digital Optomterics Test Cases">
+		
+<classes>
+			
+<class name="com.qa.digi.TestCases.DoctorLoginTest"></class>
+<class name="com.qa.digi.TestCases.DoctorDashboardTest"></class>
+<class name="com.qa.digi.TestCases.DoctorAddPrescriptionTest"></class>
+
+		
+</classes>
+	
+</test>
+
+</suite> 

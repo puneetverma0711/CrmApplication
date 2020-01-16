@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Digital Optomterics Test Suite]">
+  <listeners>
+    <listener class-name="com.qa.digi.DigitalTestCasesResult.ExtentReporterNG"/>
+  </listeners>
+  <test name="Digital Optomterics Test Cases(failed)">
+    <classes>
+      <class name="com.qa.digi.TestCases.DoctorAddPrescriptionTest">
+        <methods>
+          <include name="setup"/>
+          <include name="navigatetoviewexampage"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.qa.digi.TestCases.DoctorAddPrescriptionTest -->
+      <class name="com.qa.digi.TestCases.DoctorDashboardTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="navigatetoviewexampage"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qa.digi.TestCases.DoctorDashboardTest -->
+    </classes>
+  </test> <!-- Digital Optomterics Test Cases(failed) -->
+</suite> <!-- Failed suite [Digital Optomterics Test Suite] -->
