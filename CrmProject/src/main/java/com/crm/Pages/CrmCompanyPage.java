@@ -1,13 +1,17 @@
 package com.crm.Pages;
 
+import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.FluentWait;
 
 import com.crm.Base.CrmBase;
 import com.crm.Util.CrmUtilities;
+import com.google.common.base.Function;
 
 public class CrmCompanyPage extends CrmBase{
 
@@ -46,8 +50,28 @@ public class CrmCompanyPage extends CrmBase{
 	
 	
 	
-	public static String  verfifysavedcompanyname() throws InterruptedException {
-		Thread.sleep(3000);
+	
+	
+	public static String  verfifysavedcompanyname(){
+		
+		/*
+		 * wait = new
+		 * FluentWait<WebDriver>(driver).withTimeout(CrmUtilities.FLUENTWAIT_TIMEOUT,
+		 * TimeUnit.SECONDS).pollingEvery(CrmUtilities.FLUENTWAIT_POLLINGTIME,
+		 * TimeUnit.SECONDS).ignoring(NoSuchElementException.class);
+		 * 
+		 * savedcompanyname = (WebElement)wait.until(new
+		 * Function<WebDriver,WebElement>() { public WebElement apply(WebDriver driver)
+		 * { return savedcompanyname; }
+		 * 
+		 * 
+		 * 
+		 * 
+		 * });
+		 */
+		 
+		driver.manage().timeouts().implicitlyWait(CrmUtilities.IMPLICITWAIT_TIMEOUT,TimeUnit.SECONDS);
+		System.out.println(savedcompanyname.getText()); 
 		return savedcompanyname.getText();
 		
 		

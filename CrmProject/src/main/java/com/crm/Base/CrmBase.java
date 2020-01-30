@@ -13,6 +13,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.crm.Util.CrmUtilities;
 
@@ -21,12 +23,12 @@ import com.crm.Util.CrmUtilities;
 public class CrmBase  {
 	 public static Properties prop;
 	 public static WebDriver driver;
-
+public static Wait<WebDriver> wait;
 	
 	public CrmBase() {
 		
 		try {
-			InputStream input = new FileInputStream("C:/Users/puneetv/eclipse-workspace/CrmProject/src/main/java/com/crm/Config/Crm.properties");
+			InputStream input = new FileInputStream("F:/CrmApplication/CrmProject/src/main/java/com/crm/Config/Crm.properties");
 			
 			
             prop = new Properties();
@@ -54,7 +56,7 @@ public class CrmBase  {
 		if(browsername.equals("chrome")) {
 			/*ChromeOptions chromeOptions = new ChromeOptions();
 		    chromeOptions.addArguments("--headless");*/
-			System.setProperty("webdriver.chrome.driver", "D:/selenium jar files/chromedriver_win32/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "F:/downloaded data/selenium drivers/chromedriver.exe");
 			driver=new ChromeDriver();
 			
 			

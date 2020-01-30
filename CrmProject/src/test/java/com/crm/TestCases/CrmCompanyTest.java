@@ -32,7 +32,7 @@ public class CrmCompanyTest extends CrmBase {
 
           
   @Test
-  public void verifyaddnewcompany() throws InterruptedException {
+  public void verifyaddnewcompany() {
 	  CrmCompanyPage.addnewcompany();
 	  Assert.assertEquals(CrmCompanyPage.verfifysavedcompanyname(), "test78"); 
 	  
