@@ -7,7 +7,12 @@ import com.amazon.Page.AmazonDashboardPage;
 import com.amazon.Page.AmazonLoginPage;
 import com.amazon.Util.AmazonUtilities;
 
+
+
 import org.testng.annotations.BeforeMethod;
+
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
@@ -33,10 +38,10 @@ public class AmazonLoginTest extends AmazonBase  {
 		}
 
 	
-	
+	 
 	
 	@Test
-  public void verifylogin() throws InterruptedException {
+  public void verifylogin() throws InterruptedException, IOException {
 		amazondashboardpage=amazonloginpage.login(AmazonBase.prop.getProperty("username"), AmazonBase.prop.getProperty("password"));
 		Assert.assertEquals(driver.getTitle(), AmazonUtilities.dashboardpagetitletext);
 		
