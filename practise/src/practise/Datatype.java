@@ -2,11 +2,11 @@ package practise;
 
 public class Datatype {
 
-	/*static {
+	static {
 		
 		System.out.println("test"); 
 	}
-	*/
+	
 	
 	static void sum(){
 		int a=10,b=20;

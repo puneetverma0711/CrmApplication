@@ -5,8 +5,8 @@ public class AnagramString {
 	public static void main(String[] args) {
 		
 		
-		String firststring="fcrxzwscanmligyxyvym";
-		String secondstring="jxwtrhvujlmrpdoqbisbwhmgpmeoke";
+		String firststring="cde";
+		String secondstring="abc";
 		
 		
 		int sizeoffirststring=firststring.length();

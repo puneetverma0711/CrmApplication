@@ -7,7 +7,7 @@ import java.util.Set;
 public class Map {
 
 	public static void main(String[] args) {
-		String s="information";
+		String s="aabbc";
 		char[] c=s.toCharArray(); 
 		int size=c.length;
 		int i=0;
@@ -28,15 +28,23 @@ public class Map {
 			i++;
 		}		
 		
+	
+		for(int k=0;k<lhm.size();k++) {
+			
+			System.out.println(lhm.get(c[k]));
+			
+			
+		}
+		
 		
 	//	Set<Entry<Character,Integer>> linkedmap=lhm.entrySet();  
 		for(Entry<Character,Integer> data:lhm.entrySet() ){
 			
  
-				if(data.getValue()<2) {
-					System.out.println("first non repeating character is " +data.getKey());
-					break;
-				}
+//				if(data.getValue()<2) {
+					System.out.println("first non repeating character is " +data.getValue());
+//					break;
+//				}
 				
 			
 
