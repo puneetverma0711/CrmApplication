@@ -11,17 +11,17 @@ public class DeleteAlternateChar {
          String s=scr.nextLine();
         
         
-        int result=0;
+        int noofdeletions=0;
         
         for(int i=0;i<s.length()-1;i++) {
         if(s.charAt(i)==s.charAt(i+1)) {
-            result++;
+        	noofdeletions++;
             
         }
             
             
         }
-        System.out.println(result); 
+        System.out.println(noofdeletions); 
 
 		
 		
