@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
+import java.util.ResourceBundle;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -21,7 +22,8 @@ import com.crm.Util.CrmUtilities;
 
 
 public class CrmBase  {
-	 public static Properties prop;
+	// public static Properties prop;
+	 public static ResourceBundle resb;
 	 public static WebDriver driver;
 public static Wait<WebDriver> wait;
 	
@@ -30,11 +32,11 @@ public static Wait<WebDriver> wait;
 		try {
 			InputStream input = new FileInputStream("F:/CrmApplication/CrmProject/src/main/java/com/crm/Config/Crm.properties");
 			
-			
-            prop = new Properties();
+			resb=ResourceBundle.getBundle("Crm");
+          //  prop = new Properties();
 
            // load a properties file
-           prop.load(input);
+         //  prop.load(input);
 
           
 
@@ -50,8 +52,8 @@ public static Wait<WebDriver> wait;
 	
 	
 	public  static void  initialization() {
-		String browsername= prop.getProperty("browser");
-		
+		//String browsername= prop.getProperty("browser");
+		String browsername=resb.getString("browser");
 		if(driver==null) { 
 		if(browsername.equals("chrome")) {
 			/*ChromeOptions chromeOptions = new ChromeOptions();
@@ -74,7 +76,7 @@ driver.manage().deleteAllCookies();
 driver.manage().timeouts().pageLoadTimeout(CrmUtilities.PAGELOAD_TIMEOUT, TimeUnit.SECONDS);
 driver.manage().timeouts().implicitlyWait(CrmUtilities.IMPLICITWAIT_TIMEOUT, TimeUnit.SECONDS);
 
-driver.get(prop.getProperty("url"));
+driver.get(resb.getString("url")); 
 
 	
 	}

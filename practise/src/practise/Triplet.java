@@ -1,59 +1,63 @@
 package practise;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Scanner;
 
 
 
 public class Triplet {
 
-	public static int no_of_triplet=0;
-	public static void main(String[] args) {
-		
-		int a[]= {1,3,9,9,27,81};
-		int k=3;
-		int counter;
-		int n=0;
-		List<Integer> laststoredindexlist=new ArrayList<Integer>();
-		while(n<a.length) {
-			counter=0;
-			laststoredindexlist.clear();
-			
-			
-			loop:for(int i=n;i<a.length;i++) {
-				
-				if(laststoredindexlist.contains(i)) {
-					i++;
-				continue loop;
-				}
-				
-				if(a[i]*k==a[i+1]) {
-					counter++;
-					
-				}else {
-					n++;
-					break loop;
-					
-				}
-				
-				//counter if start  here
-			if(counter==3) {
-				no_of_triplet++;
-				n=0;
-				counter=0;
-				laststoredindexlist.add(i);
-				continue loop;
-			}
-			//counter if end here
-			
-			
-			}
-			//for loop end here
-			n++;
-			
-			
+
+	private static long countTriplets(List<Long> arr, long r) {
+		HashMap<Long,Long> leftMap = new HashMap<Long,Long>();
+		HashMap<Long,Long> rightMap = new HashMap<>();
+
+		for (long item : arr) {
+			rightMap.put(item, rightMap.getOrDefault(item, 0L) + 1);
 		}
-		//while loop end here
+
+		long count = 0;
+
+		for (int i = 0; i < arr.size(); i++) {
+			long midTerm = arr.get(i);
+			long c1 = 0, c3 = 0;
+
+			rightMap.put(midTerm, rightMap.getOrDefault(midTerm, 0L) - 1);
+
+			if (leftMap.containsKey(midTerm / r) && midTerm % r == 0) {
+				c1 = leftMap.get(midTerm / r);
+			}
+
+			if (rightMap.containsKey(midTerm * r))
+				c3 = rightMap.get(midTerm * r);
+
+			count += c1 * c3;
+
+			leftMap.put(midTerm, leftMap.getOrDefault(midTerm, 0L) + 1);
+
+		}
+		return count;
+	
+	}	
+	
+	
+	
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		long n = sc.nextLong();
+		long r = sc.nextLong();
+		List<Long> arr = new ArrayList<>();
+		while (n-- > 0) {
+			arr.add(sc.nextLong());
+		}
+
+		long ans = countTriplets(arr, r);
+		System.out.println(ans);
+
+		sc.close();	
 		
 	}
 

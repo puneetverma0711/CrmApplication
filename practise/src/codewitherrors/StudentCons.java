@@ -1,4 +1,4 @@
-package practise;
+package codewitherrors;
 
 public class StudentCons {
 
@@ -7,12 +7,21 @@ public class StudentCons {
 	String studentname;
 	int studentage;
 
+//	public StudentCons(int studentno,String studentname,int studentage){
+//	
+	//here initialization is not done of class instance variables so 
+	//output for student object with studentno will be 0 
+ //for student name is nulll and student age will be 0
+//
+//	}
+	
 	public StudentCons(int studentno,String studentname,int studentage){
-	this.studentno= studentno;
-	this.studentname= studentname;
-	this.studentage= studentage;
-
+		this.studentno= studentno;
+		this.studentname= studentname;
+		this.studentage= studentage;
+		
 	}
+	
 	
 	public StudentCons() {
 		

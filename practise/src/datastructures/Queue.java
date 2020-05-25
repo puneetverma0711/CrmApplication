@@ -2,11 +2,11 @@ package datastructures;
 
 public class Queue {
 
-	int capacity;
-	int a[];
-	int front;
-	int rear;
-	int currentsize;
+	static int capacity;
+	static int a[];
+	static int front;
+	static int rear;
+	static int currentsize;
 	
 	Queue(int size){
 		this.capacity=size;
@@ -17,7 +17,7 @@ public class Queue {
 	}
 	
 	
-	public boolean isfull() {
+	public static boolean isfull() {
 		if(currentsize==capacity) { 
 			return true;
 			
@@ -27,7 +27,7 @@ public class Queue {
 	}
 
 	
-	public boolean isempty() {
+	public static boolean isempty() {
 		if(currentsize==0) {
 			return true;
 			
@@ -39,7 +39,7 @@ public class Queue {
 	
 	
 	//to insert element from queue
-	public void enque(int data) {
+	public static void enque(int data) {
 		if(isfull()) {
 			System.out.println("queue is full");		
 		}else {
@@ -59,13 +59,14 @@ public class Queue {
 	
 	
 	// to delete element from queue
-public void dequeue() {
-		if(isempty()) {
+public  static void dequeue() {
+		
+	if(isempty()) {
 			System.out.println("queue is empty");
 		}else {
 			front++;
 			if(front==capacity-1) {
-			System.out.println("removed element is" +a[front-1]); 
+				System.out.println("removed element is" +a[front-1]); 
 			front=0;
 			}else {
 				System.out.println("removed element is" +a[front-1]);
@@ -77,23 +78,17 @@ public void dequeue() {
 		
 	}
 	
-	
 
 
 	
 	public static void main(String[] args) {
 		Queue q=new Queue(10);
-		q.enque(10);
-		q.enque(20);
-		q.dequeue();
-		q.enque(30);
-		q.enque(40);
-		q.dequeue();
-		q.dequeue();
-		q.enque(50);
-		q.dequeue();
-		q.enque(60);
-		q.dequeue();
+		enque(3);
+		enque(-7);
+		enque(0);
+		dequeue();
+		dequeue();
+	 
 	}
 
 }

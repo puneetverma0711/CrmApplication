@@ -25,7 +25,7 @@ public class CrmCompanyTest extends CrmBase {
   public void beforeMethod() {
 	  CrmBase.initialization();
 	  crmloginpage=new CrmLoginPage();
-	  crmdashbaordpage=crmloginpage.login(CrmBase.prop.getProperty("username"),CrmBase.prop.getProperty("password"));
+	  crmdashbaordpage=crmloginpage.login(CrmBase.resb.getString("username"),CrmBase.resb.getString("password"));
 	  crmdashbaordpage=new CrmDashboardPage();
 	  crmcompanypage=crmdashbaordpage.navigatecompanylink();
   }

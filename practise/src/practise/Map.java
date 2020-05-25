@@ -13,6 +13,7 @@ public class Map {
 		int i=0;
 		
 		LinkedHashMap<Character, Integer> lhm = new LinkedHashMap<Character, Integer>();
+		//lhm.put('a',lhm.getOrDefault('a', 0)+1 );
 		while(i!=size)  
 		{
 			if(lhm.containsKey(c[i])==false){  

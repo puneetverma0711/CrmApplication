@@ -1,10 +1,11 @@
-package practise;
+package codewitherrors;
 
 public class Test15 {
 
 	static { 
         
         System.out.println("static block called "); 
+       // to omit calling of main method System.exit(0);
     } 
 	
 	static void Test15() {

@@ -16,7 +16,7 @@ public class DupliItem {
 for(int i=0;i<a.length;i++){
 
 if(!st.contains(a[i])) {
-st.add(a[i]); 
+	st.add(a[i]); 
 }else {
 	continue;
 	

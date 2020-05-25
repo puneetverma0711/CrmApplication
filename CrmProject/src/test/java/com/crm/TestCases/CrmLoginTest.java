@@ -58,7 +58,7 @@ public class CrmLoginTest extends CrmBase {
   @JiraPolicy(logticketready=true)
   @Test(priority=1)
   public void verifylogin() {  
-	  crmdashbaordpage= crmloginpage.login(CrmBase.prop.getProperty("username"),CrmBase.prop.getProperty("password"));    	 
+	  crmdashbaordpage= crmloginpage.login(CrmBase.resb.getString("username"),CrmBase.resb.getString("password"));    	 
 	  Assert.assertEquals( CrmLoginPage.dashboardwelcometext(), CrmUtilities.DASHBOARD_Text);    
 	  
   }

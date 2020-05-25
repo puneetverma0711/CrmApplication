@@ -33,7 +33,7 @@ public class CrmDashboardTest extends CrmBase {
 	  
 	  CrmBase.initialization();
 	  crmloginpage=new CrmLoginPage();
-	  crmdashbaordpage=crmloginpage.login(CrmBase.prop.getProperty("username"),CrmBase.prop.getProperty("password"));
+	  crmdashbaordpage=crmloginpage.login(CrmBase.resb.getString("username"),CrmBase.resb.getString("password"));
 	  
   }
   

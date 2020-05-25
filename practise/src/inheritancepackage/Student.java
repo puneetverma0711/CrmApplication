@@ -11,6 +11,7 @@ class Student extends Person{
 	}
   
 
+	
 	public char calculate() {
 		
 		int sum=0,avg=0;

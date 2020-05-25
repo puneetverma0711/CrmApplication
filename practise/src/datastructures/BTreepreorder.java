@@ -1,6 +1,8 @@
 package datastructures;
 
-public class BTreepreorder {
+import java.util.LinkedList;
+
+public  class BTreepreorder {
 
 	
 	public static class TreeNode{
@@ -53,11 +55,40 @@ public class BTreepreorder {
 	}
 	
 	
+	public void levelordertraversal(TreeNode rootnode) {
+		
+		if(rootnode==null) {
+			return;
+
+		}
+		LinkedList<TreeNode> queue=new LinkedList<TreeNode>();
+		queue.add(rootnode);
+
+		while(!queue.isEmpty()) {
+			TreeNode current_node=queue.poll();  //this will give you the front part of the queue (i.e the added rootnode)
+			System.out.print(current_node.data + " ");
+			if(current_node.lnode!=null) queue.add(current_node.lnode);
+			if(current_node.rnode!=null) queue.add(current_node.rnode);
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
 	public static void main(String[] args) {
 		BTreepreorder bt=new BTreepreorder();
 		TreeNode rootnode=creatBinaryTree();
 		bt.preordertraversal(rootnode);
-		
+		System.out.println("---------------");  
+		bt.levelordertraversal(rootnode);     
 		
 		
 	}
