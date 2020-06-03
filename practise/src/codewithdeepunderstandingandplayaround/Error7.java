@@ -1,4 +1,4 @@
-package codewitherrors;
+package codewithdeepunderstandingandplayaround;
 
 public class Error7 {
 

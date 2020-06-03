@@ -30,7 +30,7 @@ public static Wait<WebDriver> wait;
 	public CrmBase() {
 		
 		try {
-			InputStream input = new FileInputStream("F:/CrmApplication/CrmProject/src/main/java/com/crm/Config/Crm.properties");
+			//InputStream input = new FileInputStream("F:/CrmApplication/CrmProject/src/main/java/com/crm/Config/Crm.properties");
 			
 			resb=ResourceBundle.getBundle("Crm");
           //  prop = new Properties();
@@ -40,7 +40,7 @@ public static Wait<WebDriver> wait;
 
           
 
-       } catch (IOException ex) {
+       } catch (Exception ex) {
            ex.printStackTrace();
        }
 		

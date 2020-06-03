@@ -1,4 +1,4 @@
-package codewitherrors;
+package codewithdeepunderstandingandplayaround;
 
 public class Error6 {
 
@@ -12,7 +12,7 @@ public class Error6 {
          } catch(ArrayIndexOutOfBoundsException ex1){
              ex1.printStackTrace();
          } catch(ArithmeticException ex2){
-            System.out.println("divide by 0 error appear");  
+            System.out.println("divide by 0 error test3434 appear");  
          } finally{
         	 System.out.println("finally block will be executed here");  
   

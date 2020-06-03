@@ -1,4 +1,4 @@
-package codewitherrors;
+package codewithdeepunderstandingandplayaround;
 
  public  class Test78 {
 
@@ -7,6 +7,11 @@ package codewitherrors;
 		
 		
 	}
+	 	
+	 	Test78(){
+	 		
+	 		
+	 	}
 	
 	public static void main(String[] args) {
 		

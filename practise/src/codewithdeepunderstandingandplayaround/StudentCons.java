@@ -1,4 +1,4 @@
-package codewitherrors;
+package codewithdeepunderstandingandplayaround;
 
 public class StudentCons {
 
@@ -22,11 +22,13 @@ public class StudentCons {
 		
 	}
 	
-	
+	// a constructor can have return type but cannot have the static , final keywords
+	//  can have private 
 	public StudentCons() {
 		
 		
 		System.out.println("default cons");
+		
 	}
 	
 	

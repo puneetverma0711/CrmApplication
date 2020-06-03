@@ -5,7 +5,7 @@ public class Rev {
 	public static void main(String[] args) {
 	
 		
-		String s = "elle";
+		String s = "ellp";
 		
 		int len=s.length();
 				

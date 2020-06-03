@@ -5,7 +5,7 @@ class PrimeNumbers
    public static void main (String[] args)
    {		
        int i =0;
-       int num =0;
+       int num;
        //Empty String
        String  primeNumbers = "";
 
