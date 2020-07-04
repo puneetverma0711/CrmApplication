@@ -1,12 +1,12 @@
 package datastructures;
 
-public class Stack {
+public class StackExample {
 
 	int a[];
 	int size;
 	int top;
 	
-	Stack(int size){
+	StackExample(int size){
 		this.size=size;
 		a=new int[this.size];
 		this.top=-1;
@@ -25,7 +25,7 @@ public boolean isempty() {
 	
 	
 	/*
-	 * public int peek() {
+	 * public int peek() {   // this peek operation will return you the top element from the stack
 	 * 
 	 * if(!this.isfull()) { return a[top];
 	 * 
@@ -73,21 +73,31 @@ public void push(int data) {
 	
 }
 
-
+public static int stackelementssum(StackExample s) {
+	
+	int sum=0;
+	for(int i=0;i<s.size;i++) {
+		if(!s.isempty())
+		sum=sum+s.pop();
+		
+	}
+	
+	return sum;
+	
+}
 
 
 
 	
 	public static void main(String[] args) {
-		Stack s=new Stack(5);
+		StackExample s=new StackExample(5);
 		s.push(10);
 		s.push(20);
 		s.push(30);
+		System.out.println("current sum of stack elements is: "+stackelementssum(s));  
 		s.push(40);
-		s.pop();
-		s.pop();
-		s.pop();
-
+		s.push(50);
+		System.out.println("current sum of stack elements is: "+stackelementssum(s));  
 	}
 
 }

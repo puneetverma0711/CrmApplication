@@ -7,6 +7,8 @@ public class Split {
 		String text= "welcome";
 		String s="";
 		
+		
+		
 		// below part of program for repeating each character 2 times
 		
 

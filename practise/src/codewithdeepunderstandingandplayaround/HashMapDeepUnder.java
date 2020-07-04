@@ -6,21 +6,19 @@ import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
 
+import com.google.common.collect.BiMap;
+import com.google.common.collect.HashBiMap;
+
 public class HashMapDeepUnder {
 
 	public static void main(String[] args) {
-		List<String> phonenumberlist=new ArrayList<String>();
-		phonenumberlist.add("45345354355");
-		phonenumberlist.add("564545545");
-		phonenumberlist.add("564545545");
-		phonenumberlist.add("9988988666");
-		phonenumberlist.add("4456788989");
+		List<Integer> phonenumberlist=new ArrayList<Integer>();
+		phonenumberlist.add(100);
+		phonenumberlist.add(100);
 		
 		
-		Map<String,List<String>> phonebook=new HashMap<String,List<String>>();
-		
-		phonebook.put("puneet", phonenumberlist);
-		
+		Map<Integer,List<Integer>> phonebook=new HashMap<Integer,List<Integer>>();
+		phonebook.put(1,phonenumberlist);
 		//{puneet=[45345354355, 564545545, 564545545, 9988988666, 4456788989]}
 		//here key can have multiple value in hashmap
 		//here key can have duplicate value in hashmap both will happen using list
