@@ -9,31 +9,78 @@ public class LeaderBoard {
 	
 	 private static final Scanner scanner = new Scanner(System.in);
 	
-	 static int[] climbingLeaderboard(int[] scores, int[] alice) {
-         int rankings[]=new int[alice.length]; 
-         HashMap<Integer, Integer> leaderboard=getCurrentBoard(scores);
-		 HashMap<Integer, Integer> alice_scoreranks=new HashMap<Integer, Integer>();
-          
-          
-		 
-		 
-		 
+	 public static int[] climbingLeaderboard(int[] scores,int[] ascore){
 
-         return rankings;
-         
-	    }
+		 int alicerank[]=new int[ascore.length]; 
+	
+	 HashMap<Integer, Integer> lead_brd=getLeaderBoard(scores);
+		 
+		 int i=0;
+		int size=ascore.length;
+		
+		while (i<size) {
+			int flag=0;
+			inner:for(java.util.Map.Entry<Integer, Integer> data:lead_brd.entrySet()) {
+				
+				
+				if(ascore[i]>data.getValue() && data.getKey()==1) { 
+					alicerank[i]=data.getKey();
+					flag=1;
+					break inner;	
+				}
+				
+				if(ascore[i]>data.getValue()) { 
+					alicerank[i]=data.getKey();
+					flag=1;
+					break inner;	
+				}
+				 
+				
+				if(ascore[i]==data.getValue()) {
+					alicerank[i]=data.getKey(); 
+					flag=1;
+					break inner;	
+				}
+				
+				
+				if(ascore[i]<data.getValue()) {
+					continue inner;	
+				}
+				
+				
+			}
+			
+		if(flag==0) {         
+			alicerank[i]=lead_brd.size()+1;
+			
+		}
+		
+		i++;
+
+		}
+		               
+	 return alicerank;
+	 }
 
 	   
-
-	 public static HashMap<Integer, Integer> getCurrentBoard(int[] scores){
-		 HashMap<Integer, Integer> cur_board=new HashMap<Integer, Integer>();
-		 
-		 
-		 
-		 
-		 
-		 return cur_board;
-	 }
+	 public static  HashMap<Integer, Integer> getLeaderBoard(int[] scores) {
+			HashMap<Integer, Integer> cur_board=new HashMap<Integer, Integer>();
+			 int i=0,j=1;
+			 int size=scores.length;
+			 
+			 while(i<size) {
+				 if(!cur_board.containsValue(scores[i])) {
+					 cur_board.put(j, scores[i]); 
+					 j++;
+				 }
+				 i++;
+				 
+			 }
+		
+		return cur_board;
+		
+		}
+	
 	 
 	
 	public static void main(String[] args) {

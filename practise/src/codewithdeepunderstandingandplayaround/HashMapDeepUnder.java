@@ -14,16 +14,21 @@ public class HashMapDeepUnder {
 	public static void main(String[] args) {
 		List<Integer> phonenumberlist=new ArrayList<Integer>();
 		phonenumberlist.add(100);
-		phonenumberlist.add(100);
+		phonenumberlist.add(200);
 		
+		List<Integer> faxnumberlist=new ArrayList<Integer>();
+		faxnumberlist.add(500);
+		faxnumberlist.add(700);
 		
 		Map<Integer,List<Integer>> phonebook=new HashMap<Integer,List<Integer>>();
 		phonebook.put(1,phonenumberlist);
+		phonebook.put(2,faxnumberlist);
 		//{puneet=[45345354355, 564545545, 564545545, 9988988666, 4456788989]}
 		//here key can have multiple value in hashmap
 		//here key can have duplicate value in hashmap both will happen using list
 	
-     System.out.println(phonebook.toString());
+     System.out.println(phonebook.get(2));
+    
      
      Map<String,String> phonebk=new HashMap<String,String>();
      phonebk.put("amit", "988655544");
