@@ -6,8 +6,6 @@ import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
 
-import com.google.common.collect.BiMap;
-import com.google.common.collect.HashBiMap;
 
 public class HashMapDeepUnder {
 
@@ -22,8 +20,8 @@ public class HashMapDeepUnder {
 		//{puneet=[45345354355, 564545545, 564545545, 9988988666, 4456788989]}
 		//here key can have multiple value in hashmap
 		//here key can have duplicate value in hashmap both will happen using list
-	
-     System.out.println(phonebook.toString());
+	System.out.println(phonebook.get(1));
+    // System.out.println(phonebook.toString());
      
      Map<String,String> phonebk=new HashMap<String,String>();
      phonebk.put("amit", "988655544");
