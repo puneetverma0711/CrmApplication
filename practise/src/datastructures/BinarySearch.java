@@ -6,7 +6,7 @@ public class BinarySearch {
 		
 		int a[]= {1,2,3,4,5,6,7,8,9};
 		int length=a.length;
-		int key=5;
+		int key=6;
 		int result=binarysearch(a,key,0,length-1);
 		
 		if(result==-1) 

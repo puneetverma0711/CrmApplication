@@ -1,4 +1,4 @@
-package practise;
+package datastructures;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
 
-public class LeaderBoard {
+public class LeaderBoardoptimize {
 
 	
 	
@@ -90,21 +90,7 @@ public class LeaderBoard {
 	
 	 
 	 
-	/* public static List<Integer> getSortedArray(int[] ascore) {
-		 Integer[] scorearr=Arrays.stream(ascore).boxed().toArray(Integer[]::new);
-    	 List<Integer> scorelist=new ArrayList<Integer>(Arrays.asList(scorearr));
-	Collections.sort(scorelist,new Comparator<Integer>() {
-
-		public int compare(Integer o1, Integer o2) {
-			return o2.compareTo(o1);
-		}
-	});	  
-		 
-		return scorelist;                   
-	 }
-	 
-	*/
-	 
+	
 	 
 	 
 	public static void main(String[] args) {

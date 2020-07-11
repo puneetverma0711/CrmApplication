@@ -27,7 +27,7 @@ public class HashMapDeepUnder {
 		//here key can have multiple value in hashmap
 		//here key can have duplicate value in hashmap both will happen using list
 	
-     System.out.println(phonebook.get(2));
+     System.out.println(phonebook.get(1));
     
      
      Map<String,String> phonebk=new HashMap<String,String>();
