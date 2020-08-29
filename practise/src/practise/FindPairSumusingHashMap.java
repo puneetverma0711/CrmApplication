@@ -13,7 +13,7 @@ class FindPairSumusingHashMap
 	// to 'sum' 
 	static int getPairsCount(int n, int sum) 
 	{ 
-		HashMap<Integer, Integer> hm = new HashMap<>(); 
+		HashMap<Integer, Integer> hm = new HashMap<Integer, Integer>(); 
 
 		// Store counts of all elements in map hm 
 		for (int i=0; i<n; i++){ 

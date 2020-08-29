@@ -13,7 +13,7 @@ public class DuplicateChar {
 		String s="amazonautomation";
 		char[] c=s.toCharArray();
 		int size=c.length;
-		LinkedHashMap<Character,Integer> se=new LinkedHashMap<>();
+		LinkedHashMap<Character,Integer> se=new LinkedHashMap<Character, Integer>();
 		int i=0;
 		while(i!=size) {
 			
