@@ -29,6 +29,8 @@ public class HashMapDeepUnder {
 	
      System.out.println(phonebook.get(1));
     
+	System.out.println(phonebook.get(1));
+    // System.out.println(phonebook.toString());
      
      Map<String,String> phonebk=new HashMap<String,String>();
      phonebk.put("amit", "988655544");
