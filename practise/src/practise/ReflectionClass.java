@@ -30,7 +30,12 @@ public class ReflectionClass {
       }
      
      public void method5(int a) {
-    	 System.out.println("this is method 5, and value is" +a);
+    	 System.out.println("this is method 5, and value is:" +a);
+	
+      }
+     
+     public void method6(int b) {
+    	 System.out.println("this is method 5, and value is:" +b);
 	
       }
 	

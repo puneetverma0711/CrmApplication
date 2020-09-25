@@ -1,5 +1,7 @@
 package codewithdeepunderstandingandplayaround;
 
+import java.util.List;
+
 public interface testinterface {
 
 	static class a {
@@ -17,7 +19,7 @@ public interface testinterface {
 	//here with only method prototype we cannot use static
 	// also we cannot use final keyword for method here
 	 public  void abc() ;
-	
+	List<String> dostuff(List<String> s);  
 	// public void ghj() {} this will not compile as we need to define static here for method 
 	 //with body in interface
 	 
